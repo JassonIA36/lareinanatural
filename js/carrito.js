@@ -98,7 +98,10 @@ form.addEventListener('submit',e=>{
   const v=k=>form.elements[k].value.trim();
   datos={nombre:v('nombre'),tel:v('tel'),ciudad:v('ciudad'),dir:v('dir')}; guardar();
   const lineas=Object.entries(pedido).map(([id,q])=>`• ${q} x ${prods[id].nombre} — ${cop(prods[id].precio*q)}`).join('\n');
-  const msg=`Hola, quiero hacer un pedido 🐝\n\n*Mi pedido*\n${lineas}\n\n*Total:* ${cop(total())}\n\n*Datos de entrega*\nNombre: ${v('nombre')}\nCelular: ${v('tel')}\nCiudad: ${v('ciudad')}\nDirección: ${v('dir')}`+(v('notas')?`\nNotas: ${v('notas')}`:'');
+  const msg=`Hola, quiero hacer un pedido 🐝\n\n*Mi pedido*\n${lineas}\n\n*Total productos:* ${cop(total())}
+_(Domicilio aparte, por cuenta del cliente)_
+
+*Datos de entrega*\nNombre: ${v('nombre')}\nCelular: ${v('tel')}\nCiudad: ${v('ciudad')}\nDirección: ${v('dir')}`+(v('notas')?`\nNotas: ${v('notas')}`:'');
   window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank','noopener');
 });
 form.addEventListener('input',e=>{ if(e.target.getAttribute('aria-invalid')==='true'){e.target.setAttribute('aria-invalid','false');const m=$('#e-'+e.target.name); if(m) m.textContent='';} });
