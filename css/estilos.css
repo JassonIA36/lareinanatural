@@ -226,11 +226,9 @@ html:has(.carrito[open]){overflow:hidden}
 .paso p{color:var(--suave)}
 
 /* UBICACIÓN */
-.ubic{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.ubic{display:grid;grid-template-columns:1fr;gap:44px;align-items:center;justify-items:center;text-align:center}
 .ubic .titulo{margin-bottom:16px}
-.ubic-txt{font-size:18px;margin-bottom:24px;max-width:440px;color:var(--suave)}
-.mapa{aspect-ratio:16/10;max-width:100%;border-radius:22px;border:2px dashed #cdc59f;background:var(--marfil);display:grid;place-items:center;text-align:center;color:var(--suave);font-weight:700;padding:28px}
-.mapa b{display:block;font-family:var(--serif);font-weight:400;color:var(--bosque);font-size:24px;margin-bottom:4px}
+.ubic-txt{font-size:18px;margin:0 auto 24px;max-width:440px;color:var(--suave)}
 
 /* PIE */
 footer{background:var(--bosque2);color:#cfd8c3;padding:60px 0 34px}
