@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://DOMINIO-PENDIENTE.com/sitemap.xml
+Sitemap: https://lareinanatural.com/sitemap.xml

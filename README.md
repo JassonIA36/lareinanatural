@@ -66,7 +66,7 @@ Se puede publicar gratis en **Cloudflare Pages**:
 3. Cuando el dominio esté listo, conectarlo en *Dominios personalizados*.
 
 ### Después de definir el dominio
-Reemplazar `https://DOMINIO-PENDIENTE.com` por el dominio real en:
+Reemplazar `https://lareinanatural.com` por el dominio real en:
 
 - `index.html` (etiquetas del `<head>` y datos para Google)
 - `robots.txt`

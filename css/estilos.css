@@ -274,3 +274,12 @@ footer a{color:#cfd8c3;text-decoration:none}
   .carrito,.carrito::backdrop{transition-property:opacity,background-color;transform:none!important}
   .btn:hover,.btn:active,.card:hover,.card .foto:hover img,.hero-botellas img:hover,.flotante:hover{transform:none}
 }
+
+/* PREGUNTAS FRECUENTES */
+.faqs{max-width:780px;display:grid;gap:12px}
+.faq{background:var(--marfil);border-radius:18px;box-shadow:0 1px 0 var(--linea)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 22px;font-weight:800;color:var(--bosque);position:relative;min-height:52px;touch-action:manipulation}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:24px;line-height:1;color:var(--oro-osc)}
+.faq[open] summary::after{content:"\2212"}
+.faq p{padding:0 22px 20px;color:var(--suave)}
